@@ -20,5 +20,13 @@ public class Testing {
 		
 		System.out.println("\n"+ user2 + "\n");
 		System.out.println(Manager.cloneUser(user2, Channel.VIDEO, Channel.AUDIO));
+		
+		User user3 = new User();
+		user3.setId(5);
+		user3.setDate(LocalDateTime.now().plusMonths(5));
+		user3.setName("PQR");
+		
+		System.out.println("\n"+ user3 + "\n");
+		System.out.println(Manager.cloneUser(user3, Channel.VIDEO, Channel.AUDIO));
 	}
 }
